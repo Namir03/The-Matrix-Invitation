@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.matrix-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.cursor {
+    border-left: 2px solid green;
+    animation: blink 0.7s infinite;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
